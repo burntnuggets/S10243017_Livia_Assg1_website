@@ -1,63 +1,635 @@
 <!DOCTYPE html>
 <html>
   <head>  
-    <title>My Portfolio</title>
+    <title> Mamamoo</title>
 
     <meta charset="UTF-8">
 
-	<link rel="stylesheet" href="style.css" type="text/css">
-
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
-  <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Merchandise</a></li>            
-    </ul>
-  </nav>
-    <h1>Mamamoo</h1> 
-    <p>Mamamoo is a four member South Korean girl group under Rainbow Bridge World (RBW Company). 
-        The group was formed in 2014 and its members include Moonbyul, Solar, Wheein and Hwasa.</p>
-</header>
 
-<section>
-    <h2>Events</h2> 
+  <header>
+    <nav class="menu">
+      <img src = "mamamoo logo.png" alt ="logo" class ="logo">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#tour">World Tour</a></li>
+          <li><a href="#merch">Merchandise</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    
+  <div class= "mainpic">
+    <img src="mamamoo.avif" style="width: 100%">
+  </div>
+
+  <section id = "home">
+    <p class ="space"></p>
+    <h2>Mamamoo</h2>
+    <h3>About</h3>
+    <p>Mamamoo is a four member South Korean girl group under Rainbow Bridge World (RBW Company). The group was formed in 2014 and its members include Moonbyul, Solar, Wheein and Hwasa.</p>
+    <h3>Members</h3>
+    <section class="members">
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="solar.webp" >
+        </div>
+        <div class="flex-info">
+          <h4>Solar</h4>
+        </div>
+        <div class="flex-info">
+          <ul>
+            <li>Positions: Leader, vocalist</li>
+            <li>Birthname: Kim Yong Sun (김용선)</li>
+            <li>Birth Date: February 21, 1991</li>
+            <li>Youtube: Solarsido</li>    
+            <li>Instagram: solarkeem</li>     
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="moonbyul.webp" >
+        </div>
+        <div class="flex-info">
+          <h4>Moonbyul</h4>
+        </div>
+        <div class="flex-info">
+          <ul>
+            <li>Positions: Rapper, performer</li>
+            <li>Birthname: Moon Byul-Yi (문별이)</li>
+            <li>Birth Date: December 22, 1992</li>
+            <li>Radio: Studio Moon Night</li>  
+            <li>Instagram: mo_onbyul</li>     
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="wheein.webp">
+        </div>
+        <div class="flex-info">
+          <h4>Wheein</h4>
+        </div>
+        <div class="flex-info">
+          <ul>
+            <li>Positions: Vocalist, performer</li>
+            <li>Birthname: Jung Whee In (정휘인)</li>
+            <li>Birth Date: April 17, 1995</li>
+            <li>Youtube: wheeintheblank</li>     
+            <li>Instagram: whee_inthemood</li>     
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="hwasa.webp">
+        </div>
+        <div class="flex-info">
+          <h4>Hwasa</h4>
+        </div>
+        <div class="flex-info">
+          <ul>
+            <li>Positions: Vocalist, Rapper, Mankae</li>
+            <li>Birth Name: Ahn Hye Jin (안혜진)</li>
+            <li>Birth Date: July 23, 1995</li>  
+            <li>Youtube: HWASA_maria</li>       
+            <li>Instagram: _mariahwasa</li>   
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <h3>Awards</h3>
+    <nav>
+      <ol>
+        <li>Seoul Music Awards, Bongsan Awards: 2020, 2019, 2017</li>
+        <li>Golden Disk Award, Song Division: 2021, 2019, 2017</li>
+        <li>Golden Disk Award, Best Group: 2020</li>
+        <li>MAMA Award, Worldwide Fans' Choice: 2020, 2018</li>  
+        <li>MAMA Award, Best Vocal Performace- Group: 2020</li>       
+        <li>Seoul Music Award, Dance Performance: 2018</li>
+        <li>Mnet Asian Award, Favourite Vocal Group: 2019, 2018</li>  
+      </ol>
+    </nav> 
+
+    <h3>Reality Shows</h3>
+    <div class = "showcontain">
+      <table>
+        <tr>
+          <th>Year</th>
+          <th>Show</th>
+        </tr>
+        <tr>
+          <td>2016</td>
+          <td>Mamamoo x Gfriend Showtime</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>A Lucky Day</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>Queendom</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2020</td>
+          <td>MooMoo Trip</td>
+        </tr>
+        <tr>
+          <td>Boss in the Mirror</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2022</td>
+          <td>Mamamoo - Where Are We Now</td>
+        </tr>
+        <tr>
+          <td>Take 1</td>
+        </tr>
+      </table>
+    </div>
+
+  </section>
+
+  <section id = "music">
+    <p class ="space"></p>
+    <h2>Music</h2> 
     <p></p>
     <h3>Latest Comeback</h3>
-    <p>[🎵] MIC ON by #MAMAMOO</p>
+    <p>[🎵] <b> MIC ON by #MAMAMOO </b> [🎵]</p>
     <p>The long-awaited comeback is out now on several platforms, with <b>ILLELLA</b> as its title track!</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Vz508O9NNTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>Listen to their comeback album on other platforms as well!</p>
-    <div class = links>
-      <a href="https://open.spotify.com/album/6TOnqVuglIk6Db2TdUwTcZ" target="_blank">Spotify</a>
-      <a href="https://music.apple.com/us/album/mic-on-single/1648479709" target="_blank">Apple Music</a>
+    <section class="container1">
+      <div class = links>
+        <a href="https://open.spotify.com/album/6TOnqVuglIk6Db2TdUwTcZ" target="_blank">Spotify</a>
+        <a href="https://music.apple.com/us/album/mic-on-single/1648479709" target="_blank">Apple Music</a>
+        <a href="https://www.melon.com/album/detail.htm?albumId=11074309" target="_blank">Melon</a>
+      </div>
+    </section>
+
+    <h3>Albums</h3>
+    <h4 class = "artists">Group Albums</h4>
+    <div class ="albums">
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="micon.webp" height="100px" width="auto">
+        </div>
+        <p class = "albumname">MIC ON</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/6TOnqVuglIk6Db2TdUwTcZ" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/mic-on-single/1648479709" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=11074309" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="the best.jpg" height="100px" width="auto">
+        </div>
+        <p class = "albumname">THE BEST</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/2yApvdfgG74FlAW2L4tlTW" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/i-say-mamamoo-the-best/1585079676" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10715144" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="waw.webp" height="100px" width="auto">
+        </div>
+        <p class = "albumname">WAW</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/0gt7dy4ONFo6uc8D5w2WNi" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/waw-ep/1570199513" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10618168" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="travel.jpg" height="100px" width="auto">
+        </div>
+        <p class = "albumname">TRAVEL</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/3xje7wSW2xwQx2GNJ5cfNu" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/travel-ep/1538554407" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10512631" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="dingga.jpg" height="100px" width="auto">
+        </div>
+        <p class = "albumname">DINGGA</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/4xzsBcZaK04c8IE5iVyMNK" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/dingga-single/1536553134" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10505830" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="reality.png" height="100px" width="auto">
+        </div>
+        <p class = "albumname">REALITY IN BLACK</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/0n62copUsWrST9M6AsYfZI" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/wanna-be-myself-single/1531287570" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10489013" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="reality.png" height="100px" width="auto">
+        </div>
+        <p class = "albumname">REALITY IN BLACK</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/7CucpzwxAZ6kHmctI9eo4X" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/reality-in-black/1487928105" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10351886" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="whitewind.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">WHITE WIND</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/60m09rutmwj5ewOJoFIAVY" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/white-wind/1456233895" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10261306" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="blue;s.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">BLUE;S</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/59QELOU685J1AMB2paryAx" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/blue-s-ep/1444996256" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/music.htm?albumId=10227568" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="redmoon.webp" height="100px" width="auto">
+        </div>
+        <p class = "albumname">RED MOON</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/6GhELYbXRo1LOqRPOCsQrF" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/red-moon-ep/1412672246" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10185416" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="yellowflower.jpg" height="100px" width="auto">
+        </div>
+        <p class = "albumname">YELLOW FLOWER</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/4G9qMxS9c4W5PPNdPrTaLn" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/yellow-flower/1356504224" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10145303" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="purple.png" height="100px" width="auto">
+        </div>
+        <p class = "albumname">PURPLE</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/7lqVInQc3l7SbnbZa2cpFJ" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/purple-ep/1544140376" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10073791" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="MEMORY.jpg" height="100px" width="auto">
+        </div>
+        <p class = "albumname">MEMORY</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/3Q34hV5fBbMpRpADmlptr7" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/memory/1579989307" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10012900" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="MELTING.png" height="100px" width="auto">
+        </div>
+        <p class = "albumname">MELTING</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/11hjJntrvmauDoga4Krr0U" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/melting/1579991271" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=2669407" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="pinkfunky.jpeg" height="100px" width="auto">
+        </div>
+        <p class = "albumname">PINK FUNKY</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/5Fy5PyBWqMNK7xvXO9Q32f" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/pink-funky-ep/1579993592" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=2324685" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p></p>
+
+    <h4 class = "artists">Solar Solo Albums</h4>
+    <div class ="albums">
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="face.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">容 : FACE</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/6eSFX12WIqUtmGsD8UO3FT" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/%E5%AE%B9-face-ep/1613300648" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10892117" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="SPIT.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">SPIT IT OUT</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/1pLSlOXtHKPoSoB6ovnIAK" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/spit-it-out-single/1509662004" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10422058" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <h3>Schedule</h3>
+    <h4 class = "artists">Moonbyul Solo Albums</h4>
+    <div class ="albums">
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="cheese.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">CHEESE IN THE TRAP</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/0EE8K1IGciwDPMiURGtEBf" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/c-i-t-t-cheese-in-the-trap-single/1621050354" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10935478" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="lunatic.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">6EQUENCE</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/0SXzCRUFSNGBG1S1lqvzb1" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/6equence/1605708135" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10844165" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="darkside.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">DARK SIDE OF THE MOON</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/3t6eDNGmTJIHdU9PF0GJx2" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/dark-side-of-the-moon-ep/1499069229" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10388489" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="SELFISH.webp" height="100px" width="auto">
+        </div>
+        <p class = "albumname">SELFISH</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/0HtGtnnnFeWmtvgNFg0dr1" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/selfish-single/1388255563" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10169551" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <h4 class = "artists">Wheein Solo Albums</h4>
+    <div class ="albums">
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="whee.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">WHEE</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/4BLxIwHfv87WeOQ9A4sm9E" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/whee-ep/1604196298" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10842079" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="redd.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">REDD</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/32pXXle0zoKIFG03iefH2c" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/redd-ep/1562622042" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10591613" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="soar.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">SOAR</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/3t6eDNGmTJIHdU9PF0GJx2" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/soar-single/1478867423" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10325421" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="mangolia.webp" height="100px" width="auto">
+        </div>
+        <p class = "albumname">MANGOLIA</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/6RKopanQbo5q7FjwpbhfKM" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/magnolia-easy-feat-sik-k-single/1373163676" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10159006" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <p></p>
-    
+    <h4 class = "artists">Hwasa Solo Albums</h4>
+    <div class ="albums">
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="guilt.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">GUILTY PLEASURE</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/7jke1vYOze3jdyTiWhtFnz" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/guilty-pleasure-single/1596198150" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10788595" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="maria.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">MARIA</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/5YYY7QCkq3pSw4Hoc1m0D3" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/mar%C3%ADa-ep/1521222154" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10452351" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+      <div class="album-item">
+        <div class="ablbum-img">
+          <img src="twit.jfif" height="100px" width="auto">
+        </div>
+        <p class = "albumname">TWIT</p>
+        <div class="flex-album">
+          <div class = albumlinks>
+            <a href="https://open.spotify.com/album/6KL4s0Y6Ijcj0QP1Nm1EVF" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/album/twit-single/1452787147" target="_blank">Apple Music</a>
+            <a href="https://www.melon.com/album/detail.htm?albumId=10250874" target="_blank">Melon</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h3>Tour</h3> 
-    
-    
-</section>
+  <section id = "tour">
+    <p class ="space"></p>
+    <h2>MY CON World Tour</h2> 
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h3 class = "dates">November 18 to 20, 2022</h2>
+          <p>Olympic Hall, Seoul, South Korea</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h3 class = "dates">November 26 to 27, 2022</h2>
+          <p>Makuhari Messe, Chiba, Japan</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h3 class = "dates">January 7, 2023</h2>
+          <p>AsiaWorld Expo, Hong Kong</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h3 class = "dates">January 14 to 15, 2023</h2>
+          <p>NTSU ARENA, Taipei, Taiwan</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h3 class = "dates">February 9, 2022 </h2>
+          <p>The Star Theatre, Singapore</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h3 class = "dates">February 11, 2023 </h2>
+          <p>Malawati Indoor Stadium, Kuala Lumpur, Malaysia</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h3 class = "dates">February 12, 2023</h2>
+          <p>Araneta Coliseum, Manila, Philippines</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
+  <section id = "merch">
+    <p class ="space"></p>
     <h2>Merchandise</h2> 
-    <p></p>
-</section>
 
-<footer>
+    <p></p>
+  </section>
+
+  <footer id = "newsletter">
+    <p class ="space"></p>
     <h2>Subscribe to our Newsletter!</h2>
     <form action="/some-url" method="GET">
-        <input type="text" placeholder="Name" name="name">
-        <input type="email" placeholder="Email" name="Email:" id="email" required>
-        <input type="submit" value="Sign Up">
+      <input type="text" placeholder="Name" name="name">
+      <input type="email" placeholder="Email" name="Email:" id="email" required>
+      <input type="submit" value="Sign Up">
     </form>
   </footer>
-  </body>
+
 </html>
