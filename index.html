@@ -6,30 +6,53 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&family=Chewy&family=Playfair+Display+SC:ital@1&family=Rubik+Dirt&family=Vollkorn+SC:wght@600&display=swap" rel="stylesheet">
   </head>
 
   <header>
-    <nav class="menu">
-      <img src = "mamamoo logo.png" alt ="logo" class ="logo">
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#music">Music</a></li>
-          <li><a href="#tour">World Tour</a></li>
-          <li><a href="#merch">Merchandise</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="menu">
+      <button type="button" class="nav-btn">
+        <span class="material-icons">
+          Menu
+        </span>
+      </button>
+      <img class="logo" src="mamamoo logo.png" alt="dcode">
+    </div>
+    <div class="nav-overlay"></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#music" class="nav-link">Music</a></li>
+        <li><a href="#tour" class="nav-link">World Tour</a></li>
+        <li><a href="#merch" class="nav-link">Merchandise</a></li>
+        <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+      </ul>
+    </div>
+
+    <script>
+      {
+        const navMenu = document.querySelector(".nav");
+        const navOverlay = document.querySelector(".nav-overlay");
+        const navButton = document.querySelector(".nav-btn");
+
+        navButton.addEventListener("click", () => {
+          navMenu.classList.add("nav-open");
+          navOverlay.classList.add("nav-overlay-open");
+        });
+
+        navOverlay.addEventListener("click", () => {
+          navMenu.classList.remove("nav-open");
+          navOverlay.classList.remove("nav-overlay-open");
+        });
+      }
+
+    </script>
   </header>
-    
-  <div class= "mainpic">
-    <img src="mamamoo.avif" style="width: 100%">
+  <p class ="space"></p>
+  <div class= "welcome">
+    <video src="welcomevid.MOV" autoplay muted loop></video>
   </div>
 
   <section id = "home">
@@ -113,17 +136,64 @@
     </section>
 
     <h3>Awards</h3>
-    <nav>
-      <ol>
-        <li>Seoul Music Awards, Bongsan Awards: 2020, 2019, 2017</li>
-        <li>Golden Disk Award, Song Division: 2021, 2019, 2017</li>
-        <li>Golden Disk Award, Best Group: 2020</li>
-        <li>MAMA Award, Worldwide Fans' Choice: 2020, 2018</li>  
-        <li>MAMA Award, Best Vocal Performace- Group: 2020</li>       
-        <li>Seoul Music Award, Dance Performance: 2018</li>
-        <li>Mnet Asian Award, Favourite Vocal Group: 2019, 2018</li>  
-      </ol>
-    </nav> 
+    <div class = "awardscontain">
+      <table>
+        <tr>
+          <th>Award Show</th>
+          <th>Year</th>
+          <th>Award Category</th>
+        </tr>
+        <tr>
+          <td rowspan="4">Seoul Music Awards</td>
+          <td>2017</td>
+          <td rowspan="3">Bongsan Awards</td>
+        <tr>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>Dance Performance</td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Golden Disk Awards</td>
+          <td>2017</td>
+          <td rowspan="3">Song Divison</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+        </tr>
+          <td>2020</td>
+          <td>Best Group</td>
+        </tr>
+        <tr>
+          <td rowspan="3">MAMA Award</td>
+          <td>2018</td>
+          <td rowspan="2">Worldwide Fans' Choice</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Best Vocal Performace- Group</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Mnet Asian Award</td>
+          <td>2018</td>
+          <td rowspan="2">Favourite Vocal Group</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+        </tr>
+      </table>
+    </div>
 
     <h3>Reality Shows</h3>
     <div class = "showcontain">
@@ -161,8 +231,6 @@
       </table>
     </div>
 
-  </section>
-
   <section id = "music">
     <p class ="space"></p>
     <h2>Music</h2> 
@@ -170,7 +238,9 @@
     <h3>Latest Comeback</h3>
     <p>[🎵] <b> MIC ON by #MAMAMOO </b> [🎵]</p>
     <p>The long-awaited comeback is out now on several platforms, with <b>ILLELLA</b> as its title track!</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vz508O9NNTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-container" style="--aspect-ratio: 2 / 3;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Vz508O9NNTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <p>Listen to their comeback album on other platforms as well!</p>
     <section class="container1">
       <div class = links>
@@ -613,12 +683,36 @@
         </div>
       </div>
     </div>
-  </section>
 
   <section id = "merch">
     <p class ="space"></p>
-    <h2>Merchandise</h2> 
-
+    <div class = "small-container">
+      <h2 class ="title">Merchandise</h2> 
+      <div class = "row">
+        <div class = "merchimg">
+          <img src ="moobong.jpg" height="100px" width="auto">
+        </div>
+        <div class = "merchinfo">
+          <h4>Lightstick Ver 2.5</h4>
+          <p>$75.00</p>
+          <div class = merchlinks>
+            <a href="https://krmerchs.com/products/mamamoo-official-lightstick-version-2-5" target="_blank">krmerch</a>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "merchimg">
+          <img src ="saythebest.jfif" height="100px" width="auto">
+        </div>
+        <div class = "merchinfo">
+          <h4>I Say Mamamoo: The Best Album</h4>
+          <p>$37.30</p>
+          <div class = merchlinks>
+            <a href="https://shopee.sg/MAMAMOO-I-SAY-MAMAMOO-THE-BEST-i.123535631.10644831937?sp_atk=2053471e-2c0c-4f20-ba74-7afcca655265&xptdk=2053471e-2c0c-4f20-ba74-7afcca655265" target="_blank">shopee</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <p></p>
   </section>
 
@@ -633,3 +727,4 @@
   </footer>
 
 </html>
+
